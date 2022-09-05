@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #E3E3E3;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    place-content: center;
+    margin-top: 25px;
+}
+
+/* FRAME APP */
+.app {
+    width: 310px;
+    min-height: 500px;
+    background: linear-gradient(180deg, #260D33 29.29%, #615375 100%);
+    border-radius: 20px;
+    padding: 30px;
+    align-items: center;
+
+}
+
+
+/* TITLE APP */
+
+h2 {
+    font-weight: 500;
+    color: white;
+    margin-bottom: 12px;
+    font-size: 35px;
+    margin-top: 25px;
+}
+.listNegrita {
+    font-weight: 700;
+}
+
+/* NEW TASK CONTAINER*/
+
+.newTaskContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.newTaskContainer input {
+    border-radius: 10px;
+    width: 220px;
+    height: 30px;
+    list-style: none;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.newTaskContainer input::placeholder {
+    text-align: center;
+    font-size: 16px;
+}
+
+.btnAddTask {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color:#D1313D;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.instrucciones { 
+    color: silver;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.taskListContainer {
+    display: flex; 
+    flex-direction: column;
+}
+
+.taskContainer {
+    
+    width: 90%;
+    min-height: 30px;
+    background-color: #E5625C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.taskContainer p {
+    width: 90%;
+    color: white;
+}
+
+.taskContainer img {
+    height: 18px;
+    width: auto;
+}
