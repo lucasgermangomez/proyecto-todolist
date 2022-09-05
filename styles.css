@@ -13,12 +13,14 @@ body {
 
 /* FRAME APP */
 .app {
+    display: flex;
+    flex-direction: column;
     width: 310px;
     min-height: 500px;
     background: linear-gradient(180deg, #260D33 29.29%, #615375 100%);
     border-radius: 20px;
-    padding: 30px;
-    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
 
 }
 
@@ -26,23 +28,26 @@ body {
 /* TITLE APP */
 
 h2 {
-    font-weight: 500;
+    font-weight: lighter;
     color: white;
     margin-bottom: 12px;
     font-size: 35px;
     margin-top: 25px;
+    margin-left: 12px;
+    text-align: start;
 }
 .listNegrita {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 /* NEW TASK CONTAINER*/
 
 .newTaskContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 20px;
     align-items: center;
+    justify-items: center;
 }
 
 .newTaskContainer input {
@@ -52,6 +57,7 @@ h2 {
     list-style: none;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    outline: none;
 }
 
 .newTaskContainer input::placeholder {
@@ -79,35 +85,62 @@ h2 {
     color: silver;
     font-size: 15px;
     font-family: 'Roboto';
-    font-weight: 300;
+    font-weight: lighter;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 
 }
 
-.taskListContainer {
-    display: flex; 
-    flex-direction: column;
-}
 
-.taskContainer {
-    
-    width: 90%;
+
+.sinFinalizar {
     min-height: 30px;
     background-color: #E5625C;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px;
     border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
 }
 
-.taskContainer p {
-    width: 90%;
+.sinFinalizar p {
+    display: flex;
+    width: 100%;
     color: white;
 }
 
-.taskContainer img {
+.sinFinalizar img {
     height: 18px;
     width: auto;
+    margin-left: 3px;
+}
+
+.finalizada {
+    min-height: 30px;
+    background-color: #5CE57A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.finalizada p {
+    display: flex;
+    width: 100%;
+    color: white;
+}
+
+.finalizada img {
+    height: 18px;
+    width: auto;
+    margin-left: 3px;
+}
+
+
+.taskListContainer {
+    padding: 10px;
+    justify-content: center;
 }
