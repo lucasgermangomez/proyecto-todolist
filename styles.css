@@ -81,6 +81,11 @@ h2 {
     cursor: pointer;
 }
 
+.btnAddTask:hover {
+    background-color: #E5625C;
+    scale: 1.10;
+}
+
 .instrucciones { 
     color: silver;
     font-size: 15px;
@@ -115,6 +120,11 @@ h2 {
     height: 18px;
     width: auto;
     margin-left: 3px;
+}
+
+.sinFinalizar img:hover {
+    scale: 1.25;
+    cursor: pointer;
 }
 
 .finalizada {

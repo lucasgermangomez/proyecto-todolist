@@ -10,7 +10,10 @@
         //EVENTOS
 
         addTaskBtn.addEventListener('click', addTask);
-        /* taskList.addEventListener('click', cambiarEstado); */
+        
+        document.addEventListener('keyup', addTaskKeyboard);
+
+        
         
 
 
@@ -36,6 +39,8 @@
 
             const img = document.createElement('img');
             img.setAttribute('src',"./icons/btnDelete.svg");
+            img.setAttribute('id', `img${idCounter}`);
+            img.addEventListener('click', deleteTask);
 
             containerTask.appendChild(p);
             containerTask.appendChild(img);
@@ -49,3 +54,14 @@
             const taskAtChange = document.getElementById(event.target.id).parentNode;
             taskAtChange.classList.toggle('finalizada');
         }
+
+        function deleteTask() {
+            const taskDelete = document.getElementById(event.target.id).parentNode;
+            taskList.removeChild(taskDelete);
+        }
+
+        function addTaskKeyboard() {
+            if (event.keyCode === 13) {
+                addTask();
+            }
+        };
