@@ -6,11 +6,12 @@
         // SELECTORES:
         const addTaskBtn = document.querySelector('.btnAddTask');
         const taskList = document.querySelector('.taskListContainer');
-        const task = document.querySelector('.sinFinalizar')
 
         //EVENTOS
 
         addTaskBtn.addEventListener('click', addTask);
+        /* taskList.addEventListener('click', cambiarEstado); */
+        
 
 
         //FUNCTIONES:
@@ -24,23 +25,27 @@
                 return;
             }
             const containerTask = document.createElement('div');
-            containerTask.classList.add('sinFinalizar');
-            containerTask.addEventListener('click', cambiarEstado);
-            function cambiarEstado() {
-                const task = document.querySelector('.sinFinalizar');
-                task.classList.toggle('finalizada');
-            }
+            containerTask.classList.add('sinFinalizar');          
+            
+
+
             const p = document.createElement('p')
             p.innerText = textNewTask.value;
+            p.setAttribute('id', idCounter);
+            p.addEventListener('click', cambiarEstado);
+
             const img = document.createElement('img');
             img.setAttribute('src',"./icons/btnDelete.svg");
+
             containerTask.appendChild(p);
             containerTask.appendChild(img);
             taskList.appendChild(containerTask);
-            textNewTask.value = "";
 
+            textNewTask.value = "";
+            idCounter++;
         }
 
         function cambiarEstado() {
-            task.classList.toggle('finalizada');
+            const taskAtChange = document.getElementById(event.target.id).parentNode;
+            taskAtChange.classList.toggle('finalizada');
         }

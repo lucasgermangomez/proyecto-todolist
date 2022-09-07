@@ -108,6 +108,7 @@ h2 {
     display: flex;
     width: 100%;
     color: white;
+    cursor: pointer;
 }
 
 .sinFinalizar img {
@@ -132,6 +133,7 @@ h2 {
     display: flex;
     width: 100%;
     color: white;
+    cursor: pointer;
 }
 
 .finalizada img {
