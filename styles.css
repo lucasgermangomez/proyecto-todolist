@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 310px;
-    min-height: 500px;
+    min-height: 100vh;
     background: linear-gradient(180deg, #260D33 29.29%, #615375 100%);
     border-radius: 20px;
     justify-content: flex-start;
