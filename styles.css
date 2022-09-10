@@ -157,3 +157,79 @@ h2 {
     padding: 10px;
     justify-content: center;
 }
+
+.app .background-modal {
+    background: rgb(24, 21, 21);
+    opacity: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.modalDeleteTask {
+    z-index: 1;
+    width: 262px;
+    height: 52px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    opacity: 100%;
+    border-radius: 8px;
+    margin: auto;
+    padding: 10px 0;
+    
+}
+
+.buttons-modalDeleteTask {
+    display: flex;
+    margin: 5px;
+}
+
+.cancel-modalDeleteTask {
+    width: 99px;
+    height: 20px;
+    background-color: #D1313D;
+    border: none;
+    padding: 4px;
+    margin: 4px;
+    font-size: 9.5px;
+    border-radius: 8px;
+    color: white;
+}
+
+.cancel-modalDeleteTask:hover {
+    background-color: #9e1922;
+}
+
+.accept-modalDeleteTask {
+    width: 99px;
+    height: 20px;
+    background-color: #5CE57A;
+    border: none;
+    padding: 4px;
+    margin: 4px;
+    font-size: 9.5px;
+    border-radius: 8px;
+    color: black;
+}
+
+.accept-modalDeleteTask:hover {
+    background: #36944a;
+}
+
+.inactive {
+    display: none;
+}
